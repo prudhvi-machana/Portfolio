@@ -1,22 +1,25 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+const nav = document.querySelector("#nav-menu");
+const toggle = document.querySelector(".menu-toggle");
+
+toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
     });
 });
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
         }
     });
-});
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.skill-card, .project-card').forEach(card => {
-    observer.observe(card);
-});
+document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
