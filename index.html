@@ -3,94 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <meta name="description" content="Portfolio of Machana Mohan Prudhvi Sai — Computer Science and Engineering student at IIT Indore.">
+    <title>Prudhvi Sai | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">MyPortfolio</div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <a class="logo" href="#home">Prudhvi<span>.</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav id="nav-menu">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1><span class="typing">MACHANA MOHAN PRUDHVI SAI</span></h1>
-            
-            <a href="#projects" class="btn"><b>Discover projects</b></a>
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p><b>Hello , I am Prudhvi Sai</b> , Welcome to my portfolio website. I am currently pursuing my bachelors in Computer Science and Engineering at <b>IIT INDORE</b> .I am a tech enthusiast, I am passionate about learning tech domains like Web development, Database systems, and Machine-learning. </p>
-        </div>
-    </section>
-
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>HTML & CSS</h3>
-                    <p>Creating structured and beautiful layouts.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <p>Interactive web applications.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>C++</h3>
-                    <p>Solving real life problems.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>SQL</h3>
-                    <p>Using and managing real life databases.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>DSA</h3>
-                    <p>Creating efficient solutions for real life problems.</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <p class="eyebrow">Computer Science & Engineering • IIT Indore</p>
+                <h1>Machana Mohan<br><span>Prudhvi Sai</span></h1>
+                <p class="hero-text">I build software across AI, full-stack systems, databases, and emerging technologies.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="https://github.com/prudhvi-machana" target="_blank" rel="noopener" class="btn secondary">GitHub ↗</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>I recently worked on a Machine-learning project which focused on building an AI Mock Interviewer.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>I am currently doing a project in Database and Information systems , We are aiming to create a futuristic website and Database for farmers and government which primarily focuses on various agricultural aspects.</p>
+        <section id="about" class="section">
+            <div class="container reveal">
+                <p class="section-label">01 / About</p>
+                <h2>Building things to understand how they work.</h2>
+                <p class="lead">I am a B.Tech Computer Science and Engineering student at IIT Indore, graduating in 2027. I enjoy working on problems that combine software engineering with machine learning, computer vision, databases, and systems.</p>
+                <div class="education-card">
+                    <div>
+                        <h3>Indian Institute of Technology, Indore</h3>
+                        <p>B.Tech. in Computer Science and Engineering</p>
+                    </div>
+                    <strong>7.93 CGPA</strong>
+                    <span>2023 – Present</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="a1">Contact Me</h2>
-            <p>I'm always open to discuss new projects or opportunities. Feel free to contact me at cse230001047@iiti.ac.in.</p>
-        </div>
-    </section>
+        <section id="experience" class="section alt">
+            <div class="container">
+                <p class="section-label reveal">02 / Experience</p>
+                <h2 class="reveal">Experience</h2>
+                <article class="experience-card reveal">
+                    <div class="experience-heading">
+                        <div>
+                            <h3>Oracle Financial Services Software Limited</h3>
+                            <p>Project Intern</p>
+                        </div>
+                        <div class="experience-meta">
+                            <span>May 2026 – July 2026</span>
+                            <span>Bengaluru</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Built a Python-based code analysis pipeline to extract classes, methods, entry points, imports, dependencies, queues, and configuration references from large Java codebases.</li>
+                        <li>Developed an AI-assisted documentation workflow using Codex Skills to generate structured technical documentation, flowcharts, and sequence diagrams.</li>
+                        <li>Designed a proof of concept for voice-initiated payments, exploring intent capture, validation, and secure integration with existing backend payment workflows.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <p class="section-label reveal">03 / Projects</p>
+                <div class="section-heading reveal">
+                    <h2>Selected work</h2>
+                    <p>Projects spanning AI, machine learning, full-stack development, blockchain, graphics, and mobile systems.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card featured reveal">
+                        <div class="project-top">
+                            <span class="project-number">01</span>
+                            <span>Sep 2026 – Present</span>
+                        </div>
+                        <h3>Video Anomaly Detection</h3>
+                        <p>Training-free vision system that learns normal activity in a new environment, detects anomalous events, and uses multimodal LLM reasoning to explain flagged activity.</p>
+                        <div class="tags"><span>Python</span><span>PyTorch</span><span>CLIP</span><span>YOLO-World</span><span>ByteTrack</span><span>OpenCV</span></div>
+                        <a class="project-link" href="https://github.com/onlyyashwanth1/Video_anamolyDetection" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top"><span class="project-number">02</span><span>Aug 2026 – Sep 2026</span></div>
+                        <h3>OnCloud</h3>
+                        <p>Private photo and video storage system with a FastAPI backend and Flutter mobile application, including multi-user isolation, albums, favorites, trash, thumbnails, and video variants.</p>
+                        <div class="tags"><span>Flutter</span><span>FastAPI</span><span>SQLite</span><span>SQLAlchemy</span><span>JWT</span><span>Docker-free Home Server</span></div>
+                        <a class="project-link" href="https://github.com/prudhvi-machana/photo-server" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top"><span class="project-number">03</span><span>Aug 2024 – Nov 2024</span></div>
+                        <h3>AgriData Nexus</h3>
+                        <p>Full-stack agricultural management platform designed to improve access to subsidies, loans, schemes, and crop recommendations for farmers.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>SQL</span></div>
+                        <a class="project-link" href="https://github.com/PavithraNelluri/Agrinexus-DBMS-Minor-Project-" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top"><span class="project-number">04</span><span>Mar 2025 – May 2025</span></div>
+                        <h3>DeFund</h3>
+                        <p>Decentralized crowdfunding DApp on Ethereum using smart contracts for transparent fundraising, with security testing covering reentrancy and other edge cases.</p>
+                        <div class="tags"><span>Solidity</span><span>React</span><span>Web3.js</span><span>Truffle</span><span>Ganache</span></div>
+                        <a class="project-link" href="https://github.com/prudhvi-machana/Decentralized-Crowdfunding" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top"><span class="project-number">05</span><span>Jan 2026 – May 2026</span></div>
+                        <h3>Daily Climate Forecasting</h3>
+                        <p>Time-series machine learning system for Delhi temperature forecasting, using temporal features, time-aware cross-validation, model comparison, and error analysis.</p>
+                        <div class="tags"><span>Python</span><span>Machine Learning</span><span>Time Series</span><span>Ridge</span></div>
+                        <a class="project-link" href="https://github.com/onlyyashwanth1/Daily-Climate-time-series-forecasting" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top"><span class="project-number">06</span><span>Jan 2026 – May 2026</span></div>
+                        <h3>Escape Room</h3>
+                        <p>3D interactive escape-room game with a state-driven puzzle sequence, first-person controls, object interactions, animations, and dynamic lighting.</p>
+                        <div class="tags"><span>C++</span><span>OpenGL</span><span>GLUT</span><span>Computer Graphics</span></div>
+                        <a class="project-link" href="https://github.com/onlyyashwanth1/Escape-Room" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-top"><span class="project-number">07</span><span>Jan 2026 – May 2026</span></div>
+                        <h3>Advanced Situational Surveillance Analytics Dashboard</h3>
+                        <p>Interactive dashboard for exploring solar flares, CMEs, solar particles, and solar-wind observations using NASA and NOAA data.</p>
+                        <div class="tags"><span>Data Analytics</span><span>NASA</span><span>NOAA</span><span>Dashboard</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt">
+            <div class="container">
+                <p class="section-label reveal">04 / Skills</p>
+                <h2 class="reveal">Technical toolkit</h2>
+                <div class="skills-list reveal">
+                    <div><h3>Languages</h3><p>C++ · Python · JavaScript · HTML · CSS · SQL · Solidity</p></div>
+                    <div><h3>Frameworks & Libraries</h3><p>FastAPI · React · Tailwind CSS · Bootstrap · Flask · Truffle</p></div>
+                    <div><h3>Databases</h3><p>MySQL · SQLite</p></div>
+                    <div><h3>Tools & Platforms</h3><p>GitHub · VS Code · Linux / Ubuntu</p></div>
+                </div>
+
+                <div class="achievements reveal">
+                    <div>
+                        <p class="section-label">Achievements</p>
+                        <h3>500+ competitive programming problems solved</h3>
+                    </div>
+                    <div class="achievement-links">
+                        <a href="https://codeforces.com/profile/prudhvi_machana" target="_blank" rel="noopener">Codeforces ↗</a>
+                        <a href="https://leetcode.com/u/prudhvi_machana/" target="_blank" rel="noopener">LeetCode ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container reveal">
+                <p class="section-label">05 / Contact</p>
+                <h2>Let's build something.</h2>
+                <p class="lead">I'm open to discussing software projects, internships, and interesting technical problems.</p>
+                <a class="email" href="mailto:prudhvimachana24@gmail.com">prudhvimachana24@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://github.com/prudhvi-machana" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/prudhvi-machana/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:cse230001047@iiti.ac.in">IIT Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p class="a2"> Thank you</p>
+        <p>© 2026 Machana Mohan Prudhvi Sai</p>
+        <p>IIT Indore · Computer Science & Engineering</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
